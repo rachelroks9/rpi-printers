@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="main.css">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<head>
+  <meta charset="UTF-8">
+  <title>RPI Printers</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <a class="navbar-brand" href="index.html"><img class="navbar-brand" src="img/logo.png" alt="logo"></a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="info.html">Printer Info</a></li>
+          <li><a href="setup.html">Setup Printer</a></li>
+          <li><a href="tips.html">Tips</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--/.container-->
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 left">
+        <h2>Printer Types and Formats</h2>
+        <h4>LW</h4>
+        <i>A black & white, letter-size PostScript laser printer.</i>
+
+        <h4>BLW</h4>
+        <i>A black & white, B-size (11" x 17") PostScript laser printer.</i>
+
+        <h4>P3 or Ph3</h4>
+        <i>A Tektronix Phaser 8500, 8560, or similar color PostScript laser printer that prints on letter-size paper.</i>
+
+        <h4>LET or OVR</h4>
+        <i>A Tektronix Phaser 750 or similar color PostScript laser printer that prints on letter-size paper. The LET suffix indicates plain (letter) paper, whereas the OVR (overhead) suffix indicates transparencies.</i>
+
+        <h4>LBLxx</h4>
+        <i>A black & white PostScript laser printer that prints labels. LBL means label; xx indicates number of labels/page.</i>
+
+        <h3>Generic Printer Names</h3>
+
+        <h4>PS</h4>
+        <i>The default black and white PostScript printer for your location. This printer is used as the default in the "print window" menu selection of applications programs. Alternate name: POSTSCRIPT</i>
+
+        <h4>CPS</h4>
+        <i>The default color PostScript printer. If there is a Tektronix Phaser color printer ($.40/page) in the same room, this will be the default. Otherwise the default will be the Phaser 8560 in the VCC (VCPH3LET). Alternate name: COLORPOSTSCRIPT</i>
+      </div>
+
+    <div class="col-sm-4 right">
+      <br />
+      <br />
+      <input id="search" name="search" class="form-control" type="text" placeholder="Search links" data-list=".search_data">
+      <div class="well-lg">
+        <h2>Service Status</h2>
+        <ul class="status">
+          <li class="alert alert-warning"><strong>balw: </strong> Scheduled Maintenance <i class="fa fa-lg fa-wrench"></i></li>
+          <li class="alert alert-success"><strong>eccomlw: </strong> Functioning Normally <i class="fa fa-lg fa-check"></i></li>
+          <li class="alert alert-danger"><strong>li4f1lw: </strong> Unexpected Outage <i class="fa fa-lg fa-times-circle"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+  <script src="js/jquery.hideseek.min.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

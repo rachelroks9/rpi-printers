@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="main.css">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RPI Printers</title>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img class="navbar-brand" src="img/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="info.html">Printer Info</a></li>
+                <li><a href="setup.html">Setup Printer</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+        </div>
+    </div><!--/.container-->
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 left">
+            <h2>RPI Public Printers</h2>
+            
+            <div class="well-lg">
+                <h4>Printer Information</h4>
+                <ul class="search_data">
+                    <li><a href="#">Sorted by Location</a></li>
+                    <li><strong><a href="#">Sorted by Type</a></strong></li>
+                    <li><a href="#">Printer Types and Formats</a></li>
+                    <li><a href="#">Printer Resolution and Quality</a></li>
+                    <li><a href="#">Charges and Refunds</a></li>
+                </ul>
+                <h4>Setup Printers</h4>
+                <ul class="search_data">
+                    <li><a href="#">Printers</a></li>
+                    <li><strong><a href="#">Plotting Machines</a></strong></li>
+                    <li><a href="#">Mobility Print</a></li>
+                </ul>
+                <h4>Printing Tips</h4>
+                <ul class="search_data">
+                    <li><strong><a href="#">Tips</a></strong></li>
+                    <li><a href="#">Thesis Preparation</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-3 center">
+            <br></br>
+            <br></br>
+            <h2>Printing Tips</h2>
+            <h4> Printing to an Account using lpr -A </h4>
+            <ul class="lpr">
+                <li>In order to charge a print job to a departmental account, you must receive authorization from the department and print using the lpr -A command in UNIX. You cannot print through Windows. </li>
+                <li>Before charging a print job to a departmental account, you must request to be added to a printing group through your department. Have the authorized person in your department send e-mail to the VCC Help Desk with the following information:</li>
+                <ul>
+                    <li> your name </li>
+                    <li> your RCS userID </li>
+                    <li> the departmental account number to which you will be authorized to print </li>
+                </ul>
+                <li> Once you have been added to the printing group, you will receive e-mail with the authorized account number and instructions. </li>
+            </ul>
+            <h5> To print a document </h5>
+            <ol>
+                <li> Print the document to a PostScript file. </li>
+                <li> Copy the print file (ends in .ps) to your RCS account. </li>
+                <li> Log on to an RCS UNIX computer, either at the terminal or via ssh using SecureCRT. </li>
+                <li> Enter the following command at a Unix command prompt: </li>
+                <li> lpr   -Pprinter name   -Aaccountnumber   filename .ps </li>
+            </ol> <br> 
+            <h4> Resolving Problems Printing PDF Files </h4>
+            <ul class="pdf">
+                <li> Sometimes PDF files (usually viewed with Adobe Acrobat Reader) fail to print properly, resulting in output consisting of only a header sheet or part of the file. Often an error message is produced. </li>
+                <li> However, there is a method that works a lot of the time on the Lexmarks (as well as HPs). If your PDF file fails to print, try the following method. </li>
+                <ol>
+                    <li> After opening the .pdf file, go to the File menu and select Print. </li>
+                    <li> In the Print window, select the printer you want, then click the Advanced button in the lower left corner. </li>
+                    <li> A second dialog box should appear. In this window: </li>
+                    <ul>
+                        <li> Be sure the "Print as Image" box is NOT checked. </li>
+                        <li> Under PostScript Options, in the drop-down box for "Font and Resource Policy", select Send for each Page. </li>
+                    </ul>
+                    <li> Click OK to close the dialog box. </li>
+                    <li> Click OK to print the document. </li>
+                </ol>
+                <li> If this method also fails, you can check the box labelled Print as image. However, while this usually works, it should be used only as a last resort because it creates a huge file and can take a very long time to print. </li>
+            </ul> <br> 
+            <h4> Printing to RCS Printers Using Custom Page Sizes </h4>
+            <ul class="custom">
+                <li> There may be times when you will need to print on paper larger than 8.5 by 11 inches. Then you must choose a printer that can load the paper size you want and select the appropriate settings in the printer driver properties. </li>
+                <li> The printers vcblw and vcsoutlw (black and white) and vc7750B (color) can print on B-size paper (11" x 17"), a size commonly required for CAD projects. The plotters (vcp7100, vcp7100g, and vcpltcf) use roll feed paper 36" wide up to 76" long. </li>
+                <li> If you are in a public lab, the correct drivers for these printers are already installed. </li>
+                <li> The following steps show how to choose B-size paper on the printer vcblw. [Note that the same paper-selection method applies to the plotters, except that you will have more size choices. But if you plan to use one of the plotters, first see xxxxx for more information.] </li>
+            </ul>
+            <h5> Steps for choosing a custom paper size </h5>
+            <ol>
+                <li> Once you have finalized the document in your application, select Print from the File menu. In the Name field, select vcblw from the drop-down list of printers, and then click the Properties button. </li>
+                <li> In the document properties dialog box, select the Landscape option if appropriate. Then click the Advanced button. </li>
+                <li> Now you need to select the paper size, in this case B-size. In the Paper Size field, click the down-arrow to display the drop-down menu and select 11x17 inches. Click OK. </li>
+                <li> Click the OK button until you return to the main print window. After you click OK in that window, your job will be placed in the print queue. </li>
+                <li> Printouts are brought up from the machine room on the hour and filed alphabetically by RCS user ID in the bins in the hallway outside the VCC South lab. </li>
+            </ol> <br> 
+            <h4> Accessing Your Personal Printer from RCS </h4>
+            <h5> Getting Started: </h5>
+            <ul class="personal">
+                <li> If you are on Ethernet, and wish to access your own printer, you need to send a printer access request via e-mail with the following information: </li>
+                <ol>
+                    <li> Machine name (Note: This machine must accept UNIX-type LPD requests.) </li>
+                    <li> Printer name on the machine (Note: The printer will get a standard RCS name) </li>
+                    <li> Building and room number </li>
+                    <li> Name of person offering the service </li>
+                    <li> Type of printer </li>
+                </ol>
+                <li> Once you provide us with this information, we will make the appropriate entries in the RCS printcap file, so that you, as well as any RCS user, can access the machine. Please note that any printers which cause problems -- by refusing RCS print jobs, for example -- will be removed from the printcap file. </li>
+                <li> If you are running an FTP server under MS/DOS, you can ftp directly to the remote file LPT1:, and the file will print. </li>
+                <li> Please note that you cannot access your personal printer via a SLIP connection to RCS; SLIP assigns your IP address dynamically each time you connect, and a fixed IP/hostname address is required for the printer's inclusion in the printcap file. </li>
+            </ul> <br>
+            <h4> Checking the Print Queue </h4>
+            <ul class="queue">
+                <li> Currently, you need to connect to the RCS UNIX system in order to check the print queues of the various networked printers. To make the connection, double-click the SecureCRT icon to start a secure telnet session to one of the remote UNIX hosts. After you start SecureCRT, a Connect window will appear. Select a hostname from the list and click OK. You will then be prompted for your RCS userID and password. </li>
+                <li> Once you are connected, enter the command lpq at the UNIX prompt, using the -P option to specify the name of the printer you used. Example </li>
+                <li> lpq -P vclw </li>
+                <li> When you have finished your remote session, type logout and then close the SecureCRT window. </li>
+                <li> If you want to install SecureCRT, click on the Software tab above, and then select Software to Install. </li>
+                <li> Please note that although your job will no longer be listed when the printer has received the data about your print job, your job still needs to print. Be patient and wait at least an hour for the VCC Operations staff to bring your job up to the racks along side the VCC South lab. </li>
+            </ul> <br> 
+            <h4> End of Semester Printing Tips </h4>
+            <ul class="semester">
+                <li><b> Where do I pick up my job? </b> If you are printing to a self-service printer, you will find your job at the printer. If you are printing to one of the printers or plotters in the VCC machine room, output is brought upstairs about once an hour to the racks along side VCC South. </li>
+                <li><b> Plotting? </b> Remember to allow an extra two to four hours for a glossy plot, and an extra three to six hours for clear film after your plot has finished.</li> 
+                <li><b> If you want to print on paper larger than 8 ½ x 11,</b> be sure to follow these instructions. You must change the paper size in the printer properties before printing. </li>
+                <li> The following printers can print on 11 X 17 inch (tabloid) paper: </li>
+                <ul>
+                    <li> VCSOUTB (one-sided, b&w) - 20 cents/page + 10 cents/job </li>
+                    <li> VCBLW (one-sided, b&w) - 20 cents/page + 10 cents/job </li>
+                    <li> VCBLW (two-sided, b&w) - 30 cents/sheet + 10 cents/job </li>
+                    <li> VC7760B (one-sided, color) - 20 cents/page + 20 cents/job </li>
+                    <li> VC7760B (two-sided, color) - 30 cents/sheet + 20 cents/job </li>
+                </ul>
+            </ul>
+        </div>
+        <div class="col-sm-3 right">
+            <!-- <div class="well-lg">
+                <h2>Announcements</h2>
+                <div class="alert alert-danger"><strong>RPI-ALERT:</strong> This is an urgent announcement</div>
+                <div class="alert alert-warning"><strong>SIS Outage:</strong> This is an important announcement</div>
+                <div class="alert alert-info"><strong>New Event:</strong> This is a normal announcement</div>
+            </div>
+            <hr /> -->
+            <br />
+            <br />
+            <input id="search" name="search" class="form-control" type="text" placeholder="Search links" data-list=".search_data">
+            <div class="well-lg">
+                <h2>Service Status</h2>
+                <ul class="status">
+                    <li class="alert alert-warning"><strong>balw: </strong> Scheduled Maintenance <i class="fa fa-lg fa-wrench"></i></li>
+                    <li class="alert alert-success"><strong>eccomlw: </strong> Functioning Normally <i class="fa fa-lg fa-check"></i></li>
+                    <li class="alert alert-danger"><strong>li4f1lw: </strong> Unexpected Outage <i class="fa fa-lg fa-times-circle"></i></li>
+                </ul>
+            </div>
+            <!-- <hr />
+            <div class="well-lg">
+                <h2>Upcoming Events</h2>
+                <iframe src="https://calendar.google.com/calendar/embed?src=q3v3s6gg73k86ce9i1dhe9897c%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="350" height="300" frameborder="0" scrolling="no"></iframe>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+</div>
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/jquery.hideseek.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

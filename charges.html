@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="main.css">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RPI Printers</title>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img class="navbar-brand" src="img/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="info.html">Printer Info</a></li>
+                <li><a href="setup.html">Setup Printer</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+        </div>
+    </div><!--/.container-->
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 left">
+            <h2>Printer Charges</h2>
+                <p>At the start of each fall and spring semester, each user receives a 
+                    free allocation of $12.50 for black & white printing.
+                    (The allocation is $6.25 for each summer session.) 
+                    This allocation is reset at the beginning of each new 
+                    semester after the first time you print each semester; 
+                    any "money" you do not spend on printing is not carried over to the next semester.
+                    After this allocation is used up, 
+                    charges are added to your (or your department's) Bursar bill from Rensselaer.
+                </p>
+    
+                <p><strong>Please note that the $12.50 free printing allocation is for black and white printing only.
+                    All specialized printing, including color printing and plotting, is charged to the user's account. 
+                    There is no allocation for specialized printing.
+                </strong></p>
+                
+                <p>Also note that printing charges will not appear on your Bursar bill until the amount is more than $5.00.
+                     This means that charges might not appear until the following semester.
+                </p>
+
+            <div class=accordion>
+                    <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h4>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Black and White Printers
+                                    </button>
+                                </h4>
+                            </div>
+        
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>asdfg</p> 
+                            </div>
+                        </div>
+                        <div class="card-header" id="headingTwo">
+                                <h4>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Color Printers
+                                    </button>
+                                </h4>
+                            </div>
+        
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>asdfg</p> 
+                            </div>
+                            </div>
+                            <div class="card-header" id="headingThree">
+                                    <h4>
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            Plotters
+                                        </button>
+                                    </h4>
+                                </div>
+            
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>asdfg</p> 
+                                </div>
+                                </div>
+                    </div>
+                </div>
+
+                <h2>Printing Refunds</h2>
+                <p> Fill in refund info here...</p>
+        </div>
+
+        <div class="col-sm-4 right">
+            <br />
+            <br />
+            <input id="search" name="search" class="form-control" type="text" placeholder="Search links" data-list=".search_data">
+            <div class="well-lg">
+                <h2>Service Status</h2>
+                <ul class="status">
+                    <li class="alert alert-warning"><strong>balw: </strong> Scheduled Maintenance <i class="fa fa-lg fa-wrench"></i></li>
+                    <li class="alert alert-success"><strong>eccomlw: </strong> Functioning Normally <i class="fa fa-lg fa-check"></i></li>
+                    <li class="alert alert-danger"><strong>li4f1lw: </strong> Unexpected Outage <i class="fa fa-lg fa-times-circle"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/jquery.hideseek.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -296,7 +296,17 @@
 
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
-                            WORDS GO HERE
+                                <p> Hit:To use the plotters from a Windows PC, you must be using a machine that has the appropriate printer installed.
+                                </p>
+                            <h4>Sending the Image to the Plotter</h4>
+                            <h5>From the <strong>File</strong> menu, first select "Page Setup..."</h5>
+                                <ul><li>If you are on a machine that has the correct driver, select Print from the File menu of your application.</li>
+                                <li>In the Print window, pull down the menu next to "Name:" and select the name of the plotter you want.</li>
+                                <li>it is very important to choose the paper size for the plotter! If the paper size is not already set to an appropriate size, click on Properties and select the "Paper" tab, if there is one.</li>
+                                <li>On some versions of Windows there will not be a "Paper" tab; if this is the case, on the tab marked "General", click on the "Printing Preferences" button.</li>
+                                <li>In the window that pops up, click on Advanced... and a window will appear that allows you to select the paper size</li>
+                                <li>You may select one of the standard sizes or specify a custom size, keeping in mind that the width of the plotter paper is 36 inches, and the maximum height is 72 inches.</li>
+                                <li>Note that, as a general rule, the width of your document should be 34" or less, and also that some applications require the document to be 2 inches less than the paper size in both width and height.</li>
                         </div>
                     </div>
                 </div>
@@ -312,7 +322,19 @@
 
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                         <div class="card-body">
-                            WORDS GO HERE
+                            <p>Use the UNIX command lpr to send a PostScript file to a plotter, specifying one of vcp7100 vcp7100g or vcpltcf on the -P option</p>
+                            <p>For example, to send the file "mygraphic.ps" to vcp7100, the command would be:</p>
+                            <li>lpr -Pvcp7100 mygraphic.ps</li>
+                            <p>By default, output is color with "normal" or "standard" print quality. You can choose grayscale or specify print quality (pq) and paper size by using the -X option on the lpr command</p>
+                            <p>The -X options are:</p>
+                            <li>grayscale      (or greyscale)</li>
+                            <li>pq=fast        (or pq=draft)</li>
+                            <li>pq=normal</li>
+                            <li>pq=best</li>
+                            <li>paper=<width>x<height>  (e.g., paper=20x30 means 20 inches wide by 30 inches high)</li>
+                            <p></p>
+                            <p>For example, to choose grayscale and "best" print quality on vcp7100, the UNIX command would be:</p>
+                            <li>lpr -Pvcp7100 -Xgrayscale,pq=best filename.ps</li>
                         </div>
                     </div>
                 </div>
@@ -328,7 +350,85 @@
 
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                         <div class="card-body">
-                            WORDS GO HERE
+                            <table border="1" cellpadding="1" cellspacing="1" rules="NONE" summary="standard paper sizes" width="450"><tbody><tr><td class="pagetext" width="150"><strong>Paper Choice / Name</strong></td>
+<td class="pagetext" width="144"><strong>US Measurement (inches)</strong></td>
+<td class="pagetext" width="136"><strong>Metric Measurement (mm)</strong></td>
+</tr><tr><td class="pagetext" height="426" valign="TOP" width="150">
+<p>US Letter(ANSI A)<br />
+                        Legal<br />
+                        Tabloid (ANSI B)<br />
+                        ANSI C<br />
+                        ANSI D<br />
+                        ANSI E<br />
+                        ARCH A<br />
+                        ARCH B<br />
+                        ARCH C<br />
+                        ARCH D<br />
+                        ARCH E<br />
+                        ISO A4<br />
+                        ISO A3<br />
+                        ISO A2<br />
+                        ISO A1<br />
+                        ISO A0<br />
+                        Oversize A2<br />
+                        Oversize A1<br />
+                        Oversize A0<br />
+                        JIS B4<br />
+                        JIS B3<br />
+                        JIS B2<br />
+                        JIS B1</p>
+</td>
+<td class="pagetext" height="426" valign="TOP" width="144">
+<p>8.5 x 11<br />
+                        8.5 x 14<br />
+                        11 x 17<br />
+                        17 x 22<br />
+                        22 x 34<br />
+                        34 x 44<br />
+                        9 x 12<br />
+                        12 x 18<br />
+                        18 x 24<br />
+                        24 x 36<br />
+                        36 x 48<br />
+                        8.26 x 11.69<br />
+                        11.69 x 16.54<br />
+                        16.54 x 23.39<br />
+                        23.39 x 33.11<br />
+                        33.11 x 46.81<br />
+                        19.13 x 24.61<br />
+                        24.61 x 35.43<br />
+                        35.43 x 49.01<br />
+                        10.12 x 14.33<br />
+                        14.33 x 20.27<br />
+                        20.27 x 28.66<br />
+                        28.66 x 40.55</p>
+</td>
+<td class="pagetext" height="426" valign="TOP" width="136">
+<p>215.9 x 279.4<br />
+                        215.9 x 355.6<br />
+                        279.4 x 431.8<br />
+                        431.8 x 538.8<br />
+                        558.8 x 863.6<br />
+                        863.6 x 1117.6<br />
+                        228.6 x 304.8<br />
+                        304.8 x 457.2<br />
+                        457.2 x 609.6<br />
+                        609.6 x 914.4<br />
+                        914.4 x 1219.2<br />
+                        210 x 297<br />
+                        297 x 420<br />
+                        420 x 594<br />
+                        594 x 841<br />
+                        841 x 1189<br />
+                        486 x 625<br />
+                        625 x 900<br />
+                        900 x 1245<br />
+                        257 x 364<br />
+                        364 x 515<br />
+                        515 x 728<br />
+                        728 x 1030</p>
+</td>
+</tr></tbody></table>
                         </div>
                     </div>
                 </div>
@@ -344,7 +444,31 @@
 
                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                         <div class="card-body">
-                            WORDS GO HERE
+                            <ol>
+                                <li>Resolution Tips</li>
+                                    <ul>
+                                        <li>Note that:you should create your graphics at 300dpi</li>
+                                        <li>On the other hand, if you have created graphics at screen resolution (usually 72 or 75 dpi), they will not look good when printed, no matter how high the resolution of the printer or plotter.</li>
+                                    </ul>
+                                <li>Use of Background Colors</li>
+                                    <ul>
+                                        <li>Solid backgrounds use a tremendous amount of ink, and there is no guarantee that the result will be satisfactory.</li>
+                                        <li>If your plot is large and has a solid color background, you may not like the result due to the saturation of the paper</li>
+                                        <li>It is also possible that the plotter might run out of ink before finishing the plot.</li>
+                                    </ul>
+                                <li>Color Matching</li>
+                                    <ul>
+                                        <li>For starters, monitors and scanners are based on an "additive" color system</li>
+                                            <ul>
+                                                <li>using the RGB (red, green, blue) color space</li>
+                                                <li>and use CMYK (cyan, magenta, yellow, black)</li>
+                                                <li>also the plotters are based on a "subtractive" system</li>
+                                            </ul>
+                                        <li>different monitors can vary in many ways, including calibration, variances in the phosphers and bit depths.</li>
+                                        <li> Also the device gamut (range of colors) is widely different, with monitors displaying many more colors than any printing device.</li>
+                                        <li>Colors will also look different on different types of paper.</li>
+                                        <li>If precise color rendition is important to you, consider going with a professional printing outfit.</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -360,7 +484,34 @@
 
                     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
                         <div class="card-body">
-                            WORDS GO HERE
+                            <p>Many plotting problems are due to huge files that overwhelm the capacity of the plotter. The size of the file in your application may not appear to be overly large, but this can be deceiving because files can expand greatly when converted to PostScript for printing.</p>
+                            <h4>Quick Fixes
+                            <h5>
+                                <ul>
+                                    <li>If you are using PowerPoint, check the page size to be sure no dimension is greater than 54 inches. See the PowerPoint instructions.</li>
+                                    <li>If you are using Photoshop, check to be sure:</li>
+                                        <ul>
+                                            <li> your resolution is 300 pixels/inch or less. If your file is extremely large, you may have to select 150 pixels/inch.</li>
+                                            <li> you have flattened the image layers if applicable.</li>
+                                            <li> you have chosen JPEG as the output encoding.</li>
+                                        </ul>
+                                    <li>If your file is in PDF format, open the .pdf file with Acrobat Pro and use the File > Reduce File Size... option.</li>
+                                </ul>
+                            </h5>
+                            </h4>
+                            <h4>Other Solutions</h4>
+                                <h5>Reducing Resolution
+                                    <ul>
+                                        <li>If the overall resolution is 300 or less, the problem could be the resolution of imported images.  Check that your images have resolutions of 300 or less. If not, recreating the images at lower resolutions may be the answer.</li>
+                                        <li>Also, if your file contains imported graphics with different resolutions, the plotter will use a resolution that is a multiple of each of the component resolutions. The resulting resolution could be very large, greatly inflating the file size.</li>
+                                    </ul>
+                                </h5>
+                                <h5>Changing the Format
+                                    <ul>
+                                        <li>If you cannot plot successfully from your original application using the above suggestions, try converting to another format. Usually the best choice is PDF</li>
+                                        <li>use Acrobat Pro to reduce the file size (File > Reduce File Size...). Doing this can make the difference between a failed plot and a successful plot.</li>
+                                    </ul>
+                                </h5>
                         </div>
                     </div>
                 </div>
@@ -376,7 +527,35 @@
 
                     <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
                         <div class="card-body">
-                            WORDS GO HERE
+                            <p> A good way to create a PDF file from an application is to use the Adobe program Acrobat Pro. You will usually want to create the PDF file with the same large page size as in your application</p>
+                            <ol>
+                            <li>Print to a file:</li>
+                                <ul>
+                                    <li>Use your application's Print menu to print to a file, choosing vcplt as the printer. </li>
+                                    <li>Make sure to select the correct paper size and check the box for "Print to file". Name the file with a .ps extension, for example, "myplot.ps".</li>
+                                </ul>
+                            <li>Use Acrobat Pro to create a PDF file:</li>
+                                <ul>
+                                    <li>Open Acrobat Pro, choose File -> Create pdf -> from file</li>
+                                    <li>Choose PostScript as the file type.</li>
+                                    <li>Navigate to the folder where the .ps file is located.</li>
+                                    <li>Click on "Settings.. at the bottom of the window. In the window that opens, at the right of Adobe PDF settings,
+                                    click on Edit and choose the appropriate page size (bottom of window) and 300dpi as the resolution.</li>
+                                    <li>Also, if availiable, uncheck the boxes for Accessibility and Bookmarks.</li>
+                                    <li>Select the .ps file you just created, and click on Open to create the PDF file. You may not get a chance to choose what folder the PDF goes in, but the PDF will open and you can do "Save as" to put it where you want.</li>
+                                </ul>
+
+                            <p>You should now be able to use the Print menu from Acrobat Pro to send your file to one of the plotters. Be sure to select an appropriate paper size.</p>
+
+                            <li>If the plot still does not succeed,  perhaps it is still too large. You can try one of the following:</li>
+                                <ul>
+                                    <li>In Acrobat Pro, go to    File -> Reduce File Size...    and select a later version of Acrobat.</li>
+                                    <li>You could also try creating the PDF file at a lower resolution (see step 2 above).</li>
+                                </ul>
+                            </ol>
+                            
+
+                        </ol>
                         </div>
                     </div>
                 </div>

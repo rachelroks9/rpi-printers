@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="main.css">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RPI Printers</title>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img class="navbar-brand" src="img/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="info.html">Printer Info</a></li>
+                <li><a href="setup.html">Setup Printer</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+        </div>
+    </div><!--/.container-->
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 left">
+            <h2>Printers by Location</h2>
+            <div class=accordion>
+                    <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h4>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Amos Eaton
+                                    </button>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <table class=table table-striped>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Room</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Output Format</th>
+                                            <th scope="col">Resolution</th>
+                                            <th scope="col">Cost</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                            <td>215</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#AE215LW">ae215lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                               <td>10 cents/page + 2 cents/job</td>
+                                            </tr>
+                                            <tr>
+                                            <td>216</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#AE216LW">ae216lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                               <td>10 cents/page + 2 cents/job</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </div>
+                           
+                            <div class="card-header" id="headingCII">
+                                    <h4>
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseCII" aria-expanded="true" aria-controls="collapseCII">
+                                            CII
+                                        </button>
+                                    </h4>
+                                </div>
+                            <div id="collapseCII" class="collapse" aria-labelledby="headingCII" data-parent="#accordion">
+                                    <div class="card-body">
+                                     <table class=table table-striped>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Room</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Output Format</th>
+                                            <th scope="col">Resolution</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                            <td>3112</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#CI3112LW">ci3112lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>3116</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#CI3116LW">ci3116lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>3130</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#CI3130LW">ci3130lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>3130</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#CI3130P3">ci3130p3</a></td>
+                                               <td>Color, 8.5"x11"</td>
+                                               <td>300 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>4034</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#CI4034LW">ci4034lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        
+                            <div class="card-header" id="headingJEC">
+                                    <h4>
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseGreene" aria-expanded="true" aria-controls="collapseGreene">
+                                            Greene
+                                        </button>
+                                    </h4>
+                                </div>
+                            <div id="collapseJEC" class="collapse" aria-labelledby="headingJEC" data-parent="#accordion">
+                                    <div class="card-body">
+                                     <table class=table table-striped>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Room</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Output Format</th>
+                                            <th scope="col">Resolution</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                            <td>306</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#GR306LW">gr306lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>306</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#GR306CB">gr306cb</a></td>
+                                               <td>Color, 11"x17", one/two-sided</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>306</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#GR306CBG">gr306cbg</a></td>
+                                               <td>Color; glossy, 11"x17"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>306</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#GR306CL">gr306cl</a></td>
+                                               <td>Color, 8.5"x11", one/two-sided</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        
+                            <div class="card-header" id="headingJEC">
+                                    <h4>
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseJEC" aria-expanded="true" aria-controls="collapseJEC">
+                                            JEC
+                                        </button>
+                                    </h4>
+                                </div>
+                            <div id="collapseJEC" class="collapse" aria-labelledby="headingJEC" data-parent="#accordion">
+                                    <div class="card-body">
+                                     <table class=table table-striped>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Room</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Output Format</th>
+                                            <th scope="col">Resolution</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                            <td>3207</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#EC3207LW">ec3207lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>3232</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#EC3232LW">ec3232lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>4201</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#EC4201L1">ec4201l1</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>4201</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#EC4201L2">ec4201l2</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        
+                            <div class="card-header" id="headingLally">
+                                    <h4>
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseLally" aria-expanded="true" aria-controls="collapseLally">
+                                            Lally
+                                        </button>
+                                    </h4>
+                                </div>
+                            <div id="collapseLally" class="collapse" aria-labelledby="headingLally" data-parent="#accordion">
+                                    <div class="card-body">
+                                     <table class=table table-striped>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Room</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Output Format</th>
+                                            <th scope="col">Resolution</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                            <td>102</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#LA102LW">la102lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>104</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#LA104LW">la104lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        
+                            <div class="card-header" id="headingLib">
+                                    <h4>
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseLib" aria-expanded="true" aria-controls="collapseLib">
+                                            Library
+                                        </button>
+                                    </h4>
+                                </div>
+                            <div id="collapseLib" class="collapse" aria-labelledby="headingLib" data-parent="#accordion">
+                                    <div class="card-body">
+                                     <table class=table table-striped>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Room</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Output Format</th>
+                                            <th scope="col">Resolution</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                            <td>1st Floor</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#LI1F1LW">li1f1lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>2nd Floor</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#LI2F1LW">li2f1lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>2nd Floor</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#LI2FP3">li2f1p3</a></td>
+                                               <td>Color, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>3rd Floor</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#LI3F1LW">li3f1lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>4th Floor</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#LI4F1LW">li4f1lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        
+                            <div class="card-header" id="headingPitt">
+                                    <h4>
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapsePitt" aria-expanded="true" aria-controls="collapsePitt">
+                                            Pittsburgh
+                                        </button>
+                                    </h4>
+                                </div>
+                            <div id="collapsePitt" class="collapse" aria-labelledby="headingPitt" data-parent="#accordion">
+                                    <div class="card-body">
+                                     <table class=table table-striped>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Room</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Output Format</th>
+                                            <th scope="col">Resolution</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                            <td>11002</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#PI1002LW">pi1002lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>1002</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#PI1002P3">pi1002p3</a></td>
+                                               <td>Color, 8.5"x11"</td>
+                                               <td>300 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>4114</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#PI4114LW">pi4114lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                            <tr>
+                                            <td>4206</td>
+                                               <td><a href="http://www.rpi.edu/dept/arc/web/printing/ptrinfo.html#PI4206LW ">pi4206lw</a></td>
+                                               <td>B&amp;W, 8.5"x11"</td>
+                                               <td>600 dpi</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <div class="col-sm-4 right">
+            <br />
+            <br />
+            <input id="search" name="search" class="form-control" type="text" placeholder="Search links" data-list=".search_data">
+            <div class="well-lg">
+                <h2>Service Status</h2>
+                <ul class="status">
+                    <li class="alert alert-warning"><strong>balw: </strong> Scheduled Maintenance <i class="fa fa-lg fa-wrench"></i></li>
+                    <li class="alert alert-success"><strong>eccomlw: </strong> Functioning Normally <i class="fa fa-lg fa-check"></i></li>
+                    <li class="alert alert-danger"><strong>li4f1lw: </strong> Unexpected Outage <i class="fa fa-lg fa-times-circle"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/jquery.hideseek.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

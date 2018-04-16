@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="main.css">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<head>
+  <meta charset="UTF-8">
+  <title>RPI Printers</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <a class="navbar-brand" href="index.html"><img class="navbar-brand" src="img/logo.png" alt="logo"></a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="info.html">Printer Info</a></li>
+          <li><a href="setup.html">Setup Printer</a></li>
+          <li><a href="tips.html">Tips</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--/.container-->
+  </nav>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-8 left">
+            <h2>Printer Types and Formats</h2>
+            
+            <p>Most of the RCS Black &amp; White public printers have a resolution of 600dpi. Some of the Lexmark models can be set to use 1200dpi.On a PC, you can set the resolution if the correct printer driver is installed; on UNIX, you can include the option <strong>-Xdpi=1200</strong> on the <strong>lpr</strong> command.</p>
+<p>The printer in VCC South (vcsolw or vcsoutlw) has an additional paper tray loaded with B-size (11" x 17") paper. On a PC, you can use this option if the correct printer driver is installed. From UNIX systems, you can use this paper size by specifying <strong>-Xpaper=b-size</strong> on the <strong>lpr</strong> command.</p>
+<p>The printer named vcblw (in the VCC print room) prints on B-size (11" x 17") paper by default.</p>
+<p>The VCC printer called <strong>vclw</strong> is capable of printing single-sided or double-sided output with a resolution of 600dpi. The default is double-sided. On a PC, you can request single-sided if the correct printer driver is installed. On UNIX systems, you can select the onesided option for a given print job by using the -X option on the <strong>lpr</strong> command. For example, the following command prints the file <strong>myfile</strong> on only one side of the paper:</p>
+<pre>
+        
+<strong>lpr -Pvclw -Xonesided myfile</strong>
+
+</pre><h2>Color Printers</h2>
+<p>Most color printers have physical resolutions of 300dpi. However, their effective resolution appears better than 300dpi, and the print quality is very good.</p>
+<p>The Tektronix Phaser 750 printers (such as <strong>vc750let,</strong> <strong>vc7750b</strong>) have a resolution of 600dpi and produce output of excellent quality.</p>
+<p>Some of the color printers can print two-sided, and some use <strong>B-size</strong> (11" x 17") paper. For specifics, see <a href="sorted-type/color-printers" title="color printers"> the list of color printers</a>.</p>
+
+            
+            
+        </div>
+
+    <div class="col-sm-4 right">
+      <br />
+      <br />
+      <input id="search" name="search" class="form-control" type="text" placeholder="Search links" data-list=".search_data">
+      <div class="well-lg">
+        <h2>Service Status</h2>
+        <ul class="status">
+          <li class="alert alert-warning"><strong>balw: </strong> Scheduled Maintenance <i class="fa fa-lg fa-wrench"></i></li>
+          <li class="alert alert-success"><strong>eccomlw: </strong> Functioning Normally <i class="fa fa-lg fa-check"></i></li>
+          <li class="alert alert-danger"><strong>li4f1lw: </strong> Unexpected Outage <i class="fa fa-lg fa-times-circle"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+  <script src="js/jquery.hideseek.min.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -38,68 +38,98 @@
     <div class="row">
         <div class="col-sm-8 left">
             <h2>Thesis Preparation</h2>
-            <h4>Using LaTeX</h4>
-            <ul class="latex">
-                <li> Rensselaer's Office of Graduate Education offers graduate students a preparation guide which provides guidelines for writing and submitting a thesis, project, or dissertation.  Please refer to this document for more complete thesis-related instructions.</li><br>
-                <li> Students may still download TexLive for free and use the software under the Linux, Windows, or Macintosh operating systems. However, there is no consulting support available for this application.</li><br>
-                <li><b> 1. Use the Approved LaTeX Thesis Class </b></li>
-                <ul class="latex_steps">
-                    <li>The thesis document class is used to produce either a master's or a doctoral thesis that meets the formatting requirments of the Graduate School.</li>
-                    <li>To use this class, first  save the file thesis.cls on your computer and either put it in the same directory with the other .tex files that make up your thesis.</li>
-                    <li>If your thesis includes algorithms, you may be interested in the algorithm2e package, if not already on your system, you can download the files from the TeX archive website.</li>
-                </ul> <br> 
-                <li><b> 2. The Template Files Provide a Quick Start </b></li>
-                <ul class="latex_steps">
-                    <li> A set of thesis template (or prototype) files is available, with each file containing the commands to produce a particular part of a thesis. If you wish, you may copy these files to your own computer and use them to get started on your thesis. The template files are: </li>
-                    <li>For a short thesis (about 20-30 pages), assuming a masters thesis:</li>
-                    <ul> 
-                        <li> rpithes-short.tex (complete thesis) </li>
-                    </ul>
-                    <li> For a longer thesis: </li>
-                    <ul>
-                        <li> rpithes.tex </li>
-                        <li> rpititle-mas.tex   or   rpititle-phd.tex </li>
-                        <li> rpiack.tex </li>
-                        <li> rpiabs.tex </li>
-                        <li> rpichap1.tex </li>
-                        <li> rpichap2.tex </li>
-                        <li> rpibib.tex </li>
-                        <li> rpiapp.tex </li>
-                    </ul>
-                </ul> <br> 
-                <li><b> 3. Read the Documentation </b></li>
-                <ul class="latex_steps">
-                    <li> The ARC document Preparing a Thesis with LaTeX [PDF file, dated February 2008] provides instructions on how to use the RPI thesis document class and includes an example of using the templates. </li>
-                    <li> Conversion from LaTeX to PDF is free and straightforward; please read the instructions in Creating a PDF File from a LaTeX Thesis. </li>
-                </ul>
-            </ul> <br>
-            <h4> Using Microsoft Word </h4>
-            <h5>Using the Rensselaer thesis template and "front pages" files</h5>
-            <ul class="word_steps">
-                <li> Microsoft Word templates designed to produce either a master's or a doctoral thesis that meets the formatting requirements of the Graduate School. The names of these template files are RPIthesis.dotx for Microsoft Word 2010 and 2007, used in conjunction with the appropriate prototype "front pages" file for either a master's or doctoral thesis. </li>
-                <li> To get started, first download the appropriate Microsoft Word Template file: RPIthesis.dotx (for Microsoft Word 2010 and 2007) </li>
-                <li> To do this, right-click on the appropriate link above, choose "Save Target As" or "Save Link As", and place it in the Microsoft Office Templates folder. This folder is usually located at: Windows 7 -- C:\Users\your-userid\AppData\Roaming\Microsoft\Templates</li>
-                <li> Next, download the appropriate Word prototype files. Please note that you will need two files: one that you will use for your complete thesis or dissertation, and the other for just the abstract title page and the abstract itself.</li>
-            </ul>
-            <h5> For a master's thesis </h5>
-            <h6> Microsoft Word 2010 and 2007 </h6>
-            <ul>
-                <li> RPIfrontpages-mas.docx </li>
-                <li> RPIabstitlepage-mas.docx </li>
-            </ul>
-            <h5> For a doctoral thesis </h5>
-            <h6> Microsoft Word 2010 and 2007 </h6>
-            <ul>
-                <li> RPIfrontpages-phd.docx </li>
-                <li> RPIabstitlepage-phd.docx </li>
-            </ul>
-            <h5> Reading the style instructions </h5>
-            <ul>
-                <li> You must remember to use the styles and apply them consistently! The following documents provide instructions for using styles, inserting tables, figures, cross references and footnotes, and describes how to assemble the thesis from multiple chapter files and build the tables of contents. </li>
-                <li> Preparing Your Thesis with Microsoft Word 2010 (PDF file) </li>
-                <li> Creating a PDF file from a Microsoft Word thesis (PDF file) (for Microsoft Word 2003 users) </li>
-                <li> Please also note that the department of Graduate Education has prepared specific guidelines for the formatting and layout of your thesis template produces an acceptable format, you should be familiar with the regulations on thesis preparation. </li>
-            </ul>
+
+            <div class="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h4>
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Using LaTeX
+                            </button>
+                        </h4>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="latex">
+                                <li> Rensselaer's Office of Graduate Education offers graduate students a preparation guide which provides guidelines for writing and submitting a thesis, project, or dissertation.  Please refer to this document for more complete thesis-related instructions.</li><br>
+                                <li> Students may still download TexLive for free and use the software under the Linux, Windows, or Macintosh operating systems. However, there is no consulting support available for this application.</li><br>
+                                <li><b> 1. Use the Approved LaTeX Thesis Class </b></li>
+                                <ul class="latex_steps">
+                                    <li>The thesis document class is used to produce either a master's or a doctoral thesis that meets the formatting requirments of the Graduate School.</li>
+                                    <li>To use this class, first  save the file thesis.cls on your computer and either put it in the same directory with the other .tex files that make up your thesis.</li>
+                                    <li>If your thesis includes algorithms, you may be interested in the algorithm2e package, if not already on your system, you can download the files from the TeX archive website.</li>
+                                </ul> <br> 
+                                <li><b> 2. The Template Files Provide a Quick Start </b></li>
+                                <ul class="latex_steps">
+                                    <li> A set of thesis template (or prototype) files is available, with each file containing the commands to produce a particular part of a thesis. If you wish, you may copy these files to your own computer and use them to get started on your thesis. The template files are: </li>
+                                    <li>For a short thesis (about 20-30 pages), assuming a masters thesis:</li>
+                                    <ul> 
+                                        <li> rpithes-short.tex (complete thesis) </li>
+                                    </ul>
+                                    <li> For a longer thesis: </li>
+                                    <ul>
+                                        <li> rpithes.tex </li>
+                                        <li> rpititle-mas.tex   or   rpititle-phd.tex </li>
+                                        <li> rpiack.tex </li>
+                                        <li> rpiabs.tex </li>
+                                        <li> rpichap1.tex </li>
+                                        <li> rpichap2.tex </li>
+                                        <li> rpibib.tex </li>
+                                        <li> rpiapp.tex </li>
+                                    </ul>
+                                </ul> <br> 
+                                <li><b> 3. Read the Documentation </b></li>
+                                <ul class="latex_steps">
+                                    <li> The ARC document Preparing a Thesis with LaTeX [PDF file, dated February 2008] provides instructions on how to use the RPI thesis document class and includes an example of using the templates. </li>
+                                    <li> Conversion from LaTeX to PDF is free and straightforward; please read the instructions in Creating a PDF File from a LaTeX Thesis. </li>
+                                </ul>
+                            </ul> <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h4>
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseTwo"> Using Microsoft Word
+                            </button>
+                        </h4>
+                    </div>
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <h5>Using the Rensselaer thesis template and "front pages" files</h5>
+                            <ul class="word_steps">
+                                <li> Microsoft Word templates designed to produce either a master's or a doctoral thesis that meets the formatting requirements of the Graduate School. The names of these template files are RPIthesis.dotx for Microsoft Word 2010 and 2007, used in conjunction with the appropriate prototype "front pages" file for either a master's or doctoral thesis. </li>
+                                <li> To get started, first download the appropriate Microsoft Word Template file: RPIthesis.dotx (for Microsoft Word 2010 and 2007) </li>
+                                <li> To do this, right-click on the appropriate link above, choose "Save Target As" or "Save Link As", and place it in the Microsoft Office Templates folder. This folder is usually located at: Windows 7 -- C:\Users\your-userid\AppData\Roaming\Microsoft\Templates</li>
+                                <li> Next, download the appropriate Word prototype files. Please note that you will need two files: one that you will use for your complete thesis or dissertation, and the other for just the abstract title page and the abstract itself.</li>
+                            </ul>
+                            <h5> For a master's thesis </h5>
+                            <h6> Microsoft Word 2010 and 2007 </h6>
+                            <ul>
+                                <li> RPIfrontpages-mas.docx </li>
+                                <li> RPIabstitlepage-mas.docx </li>
+                            </ul>
+                            <h5> For a doctoral thesis </h5>
+                            <h6> Microsoft Word 2010 and 2007 </h6>
+                            <ul>
+                                <li> RPIfrontpages-phd.docx </li>
+                                <li> RPIabstitlepage-phd.docx </li>
+                            </ul>
+                            <h5> Reading the style instructions </h5>
+                            <ul>
+                                <li> You must remember to use the styles and apply them consistently! The following documents provide instructions for using styles, inserting tables, figures, cross references and footnotes, and describes how to assemble the thesis from multiple chapter files and build the tables of contents. </li>
+                                <li> Preparing Your Thesis with Microsoft Word 2010 (PDF file) </li>
+                                <li> Creating a PDF file from a Microsoft Word thesis (PDF file) (for Microsoft Word 2003 users) </li>
+                                <li> Please also note that the department of Graduate Education has prepared specific guidelines for the formatting and layout of your thesis template produces an acceptable format, you should be familiar with the regulations on thesis preparation. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col-sm-4 right">
             <br />
